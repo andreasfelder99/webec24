@@ -2,9 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>WebEngineering HS24 Andreas Felder</title>
+    <title>Weekly Lessons Learned</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header>
+    <h1>Weekly Lessons Learned</h1>
+</header>
+<main>
+    <article class="post">
+        <h2>Week 1</h2>
+        <p>In week 1, we had an introduction to HTML 5. These are my lessons learned:</p>
+        <ul>
+            <li>HTML 5 is very forgiving. Wrong syntax or wrong tags simply get ignored.</li>
+            <li>You can but should not put a <code>&lt;span&gt;</code> inside a <code>&lt;p&gt;</code> tag.</li>
+        </ul>
+    </article>
+    <section>
+        <h2>Submit Your Favorite HTML Resource</h2>
+        <form action="mailto:dierk.koenig@fhnw.ch" method="post" enctype="text/plain">
+            <label for="resource-link">Resource Link:</label><br>
+            <input type="url" id="resource-link" name="resource-link" required><br><br>
 
+            <label for="description">Why do I like it:</label><br>
+            <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</main>
 </body>
 </html>
