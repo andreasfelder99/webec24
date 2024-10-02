@@ -31,12 +31,17 @@ environments {
         driver = {
             FirefoxOptions o = new FirefoxOptions()
             o.addArguments('-headless')
+            o.setBinary("/opt/homebrew/bin/firefox")
             new FirefoxDriver(o)
         }
     }
 
     // run via “./gradlew -Dgeb.env=firefox iT”
     firefox {
-        driver = { new FirefoxDriver() }
+        driver = {
+            FirefoxOptions o = new FirefoxOptions()
+            o.setBinary("/opt/homebrew/bin/firefox")
+            new FirefoxDriver(o)
+        }
     }
 }
